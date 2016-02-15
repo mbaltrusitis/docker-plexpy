@@ -1,0 +1,9 @@
+FROM mbaltrusitis/deb-base:wheezy
+
+ENV LANG "C"
+
+RUN git clone https://github.com/drzoidberg33/plexpy.git /opt/plexpy
+
+EXPOSE 8181
+
+CMD ["python", "--nolaunch", "--datadir", "configdata/plexpy/data", "--config", "configdata/plexpy/config", "/opt/plexpy/PlexPy.py"]
