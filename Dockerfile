@@ -6,4 +6,4 @@ RUN git clone https://github.com/drzoidberg33/plexpy.git /opt/plexpy
 
 EXPOSE 8181
 
-CMD ["python", "/opt/plexpy/PlexPy.py --nolaunch --datadir=/configdata/plexpy/data --config=/configdata/plexpy/config/config"]
+CMD ["python", "/opt/plexpy/PlexPy.py --nolaunch --datadir=/configdata/plexpy/data"]
